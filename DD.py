@@ -330,7 +330,7 @@ def start():
             fighter()
             Hstate = Hstate+1
         elif(Hstate == 3):
-            print("You enter a mouintian side, were a three head wyvern flies by")
+            print("You enter a mouintian side, wHere a three head wyvern flies by")
             room()
             reset()
             fighter()
