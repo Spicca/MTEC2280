@@ -324,49 +324,49 @@ def start():
     Hstate=2
     while(answer == "Yes"):
         if(Hstate == 2):
-            print("\nYOU HAVE ENTERED THE FIRST ROOM")
+            print("\nYou find yourself on a frozen lake, with corpses under the ice, and a large demon incased in lce overlooking you")
             room()
             reset()
             fighter()
             Hstate = Hstate+1
         elif(Hstate == 3):
-            print("YOU HAVE ENTER THE SECOND ROOM")
+            print("You enter a mouintian side, were a three head wyvern flies by")
             room()
             reset()
             fighter()
             Hstate=Hstate+1
         elif(Hstate == 4):
-            print("YOU HAVE ENTERED THE THIRD ROOM")
+            print("You see a boat, near a boiling hot lake with people being pulled in as they scream for help")
             room()
             reset()
             fighter()
             Hstate=Hstate+1
         elif(Hstate == 5):
-            print("YOU HAVE ENTERED THE FOURTH ROOM")
+            print("after crossing the lake, you go over a steep hill, and see people left heavy bags of gold over the hill as they strugle to let go of the gold")
             room()
             reset()
             fighter()
             Hstate=Hstate+1
         elif(Hstate == 6):
-            print("YOU HAVE ENTERED THE FIFTH ROOM")
+            print("going down the hill you see a pit of dead bodys, and infront of you lies a three headed dog guarding a door")
             room()
             reset()
             fighter()
             Hstate=Hstate+1
         elif(Hstate == 7):
-            print("YOU HAVE ENTERED THE SIXTH ROOM")
+            print("You open the door, and find a large room, warm with a sweet smell, with men lying with women immobleized, you see a door far away, but the women will not let you leave")
             room()
             reset()
             fighter()
             Hstate=Hstate+1
         elif(Hstate == 8):
-            print("YOU HAVE ENTERED THE SEVENTH ROOM")
+            print("You see nothing, you feel no wind, it's a white room, that goes on forever")
             room()
             reset()
             fighter()
             Hstate=Hstate+1
         elif(Hstate == 9):
-            print("YOU HAVE ENTERED THE FINAL ROOM")
+            print("You come out of a bed of dirt, you are greeted with the frozen eyes of many people, and they all scream the samething, TRAITOR!")
             room()
             boss()
        
