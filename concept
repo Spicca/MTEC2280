@@ -1,0 +1,9 @@
+1. user cranks up the motor
+
+2. motor charges compasator
+
+3. arduino read when the compasator is full
+
+4. returns string when user fully charged compasator with time it took
+
+5. people can contest for high score
