@@ -27,3 +27,5 @@ Serial.println();
 
 */
 }
+
+source: http://www.instructables.com/id/ARDUINO-TEMPERATURE-SENSOR-LM35/
