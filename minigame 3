@@ -40,3 +40,4 @@ void loop() {
 }
 
 this need to be modded so the user must guess the distance so far it only goes to 50 cm
+source: http://www.instructables.com/id/Simple-Arduino-and-HC-SR04-Example/?ALLSTEPS
