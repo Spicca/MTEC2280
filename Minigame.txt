@@ -1,0 +1,95 @@
+import sys
+import random
+import serial
+global s
+
+ser = serial.Serial("/dev/cu.usbmodem1421", 9600)
+print(ser.name)
+
+if(ser.inWaiting() > 0):
+	s = ser.readline()
+	s = s.strip()
+	s = s.decode("utf-8")
+
+Hstate = 0
+
+print("WELCOME TO THE MINIGAME \n Follow the given instructions to make it to the end of the map. \n There is 5 rooms to complete \n But be weary of time! \n enjoy! \n\n\n\n")
+		print("\n")
+		print("\n")
+		answer=input("Would you like to start playing?")
+		print("\n")
+		print("\n")
+		if(answer=="Y"):
+			Hstate=Hstate+1
+
+while(Hstate>0):
+	if(ser.inWaiting() > 0):
+		s = ser.readline()
+		s = s.strip()
+		s = s.decode("utf-8")
+		print("WELCOME TO THE MINIGAME \n Follow the given instructions to make it to the end of the map. \n There is 5 rooms to complete \n But be weary of time! \n enjoy! \n\n\n\n")
+		print("\n")
+		print("\n")
+		answer=input("Would you like to start playing?")
+		print("\n")
+		print("\n")
+		if(answer=="Y"):
+			Hstate=Hstate+1
+		if(Hstate==1):
+			print("Create a blackout by covering the light sensor! You will hear a beep when it is complete.")
+			if(s == "Complete 1" ):
+				print(s)
+				print("Well Done")
+				print("______________________")
+				print("\n")
+				print("______________________")
+				Hstate=2
+		if(Hstate==2):
+			print("Tap the button to turn on the LED. You will hear a short beep when it is complete.")
+			if(s == "Complete 2"):
+				print(s)
+				print("Well Done")
+				print("______________________")
+				print("\n")
+				print("______________________")
+				Hstate=3
+		if(Hstate==3):
+			print(s)
+			print("Find a way to shorten the distance between the arduino and the wall!")
+			if(s == "Complete 3"):
+				print("Well Done")
+				print("______________________")
+				print("\n")
+				print("______________________")
+				Hstate=4
+		if(Hstate==4):
+			print(s)
+			print("Make it hot! Find a way to raise the temperture on the termperture sensor.")
+			if(s == "Complete 4"):
+				print("Well Done you've completed all the minigames!") 
+				print("______________________")
+				print("\n")
+				print("______________________") 
+				Hstate=Hstate+1
+		else:
+			print("Minigames have been reset")
+			Hstate=0
+
+
+ser.close()
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+               
+
+   
